@@ -8,7 +8,7 @@ export function activate(context: vscode.ExtensionContext) {
 		let items = links.map(link => {
 			return { label: link.label, url: link.url };
 		});
-		vscode.window.showQuickPick(items).then(selectedLink => {
+		vscode.window.showQuickPick(items, {placeHolder: "Please pick the link you want to access or start typing to filter."}).then(selectedLink => {
 			if (selectedLink) {
 				vscode.commands.executeCommand("vscode.open", vscode.Uri.parse(selectedLink.url));
 			}

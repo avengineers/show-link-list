@@ -2,7 +2,7 @@
   "name": "show-link-list",
   "displayName": "Show Link List",
   "description": "Shows a Dialog with a pair of labels and links configured in settings.json, e.g. links to support channels.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "engines": {
     "vscode": "^1.54.0"
   },
