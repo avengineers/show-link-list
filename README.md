@@ -22,4 +22,4 @@ with
 ```
 
 you can define a set of saved URLs that shall be fast accessible within your project.
-The options pop up when running `Support. Show Links` 
+The options pop up when running `Support: Show Links` 
