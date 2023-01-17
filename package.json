@@ -3,7 +3,7 @@
   "displayName": "Show Link List",
   "publisher": "Avengineers",
   "description": "Shows a Dialog with a pair of labels and links configured in settings.json, e.g. links to support channels.",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "engines": {
     "vscode": "^1.54.0"
   },
@@ -25,8 +25,61 @@
         "title": "Show Links",
         "category": "Support"
       }
+    ],
+    "configuration": {
+      "title": "show-link-list Configuration",
+      "properties": {
+        "show-link-list.links": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "jsonValidation": [
+      {
+        "fileMatch": [
+          "settings.json"
+        ],
+        "schema": {
+          "type": "object",
+          "properties": {
+            "show-link-list.links": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "label": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     ]
   },
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "settings.json"
+      ],
+      "url": "./settings.schema.json"
+    }
+  ],
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",

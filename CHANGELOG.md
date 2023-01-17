@@ -1,9 +1,14 @@
 # Change Log
 
-All notable changes to the "show-link-list" extension will be documented in this file.
+# 0.3.0
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+* add failure handling in case configuration is missing.
+* add settings.json syntax auto completion
 
-## [Unreleased]
+# 0.2.0
 
-- Initial release
+* added license and README
+
+# 0.1.0
+
+* initial release
