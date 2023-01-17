@@ -1,5 +1,10 @@
 # Change Log
 
+# 0.4.0
+
+* add icon
+* add keywords
+
 # 0.3.0
 
 * add failure handling in case configuration is missing.
