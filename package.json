@@ -1,9 +1,9 @@
 {
   "name": "show-link-list",
-  "displayName": "Show Link List",
+  "displayName": "Favorite URLs",
   "publisher": "Avengineers",
-  "description": "Shows a Dialog with a pair of labels and links configured in settings.json, e.g. links to support channels.",
-  "version": "0.4.0",
+  "description": "Shows a Dialog with a pair of labels and links as a QuickPick list configured in settings.json, e.g. links to support channels. Those can be the favorite URLs or anything project relevant to documentation or anything else.",
+  "version": "0.4.1",
   "engines": {
     "vscode": "^1.54.0"
   },
@@ -17,7 +17,10 @@
     "links",
     "url",
     "urls",
-    "configurable"
+    "configurable",
+    "list",
+    "url list",
+    "url favorites"
   ],
   "icon": "images/icon.png",
   "activationEvents": [
