@@ -18,6 +18,7 @@ In Powershell
 * `npm config set ca ""`
 * `npm config set ignore-scripts false`
 * `npm install`
+* `npm install --global vsce`
 * `tsc; vsce package`
 
 ## Get up and running straight away
