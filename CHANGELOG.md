@@ -1,5 +1,13 @@
 # Change Log
 
+# 0.4.2
+
+* fix bug in settings.json schema
+
+# 0.4.1
+
+* slightly adapt keywords and display name
+
 # 0.4.0
 
 * add icon

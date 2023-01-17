@@ -3,7 +3,7 @@
   "displayName": "Favorite URLs",
   "publisher": "Avengineers",
   "description": "Shows a Dialog with a pair of labels and links as a QuickPick list configured in settings.json, e.g. links to support channels. Those can be the favorite URLs or anything project relevant to documentation or anything else.",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "engines": {
     "vscode": "^1.54.0"
   },
@@ -57,42 +57,8 @@
           }
         }
       }
-    },
-    "jsonValidation": [
-      {
-        "fileMatch": [
-          "settings.json"
-        ],
-        "schema": {
-          "type": "object",
-          "properties": {
-            "show-link-list.links": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "label": {
-                    "type": "string"
-                  },
-                  "url": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    ]
-  },
-  "json.schemas": [
-    {
-      "fileMatch": [
-        "settings.json"
-      ],
-      "url": "./settings.schema.json"
     }
-  ],
+  },
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
