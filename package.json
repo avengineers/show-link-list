@@ -3,7 +3,7 @@
   "displayName": "Favorite URLs",
   "publisher": "Avengineers",
   "description": "Shows a Dialog with a pair of labels and links as a QuickPick list configured in settings.json, e.g. links to support channels. Those can be the favorite URLs or anything project relevant to documentation or anything else.",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "engines": {
     "vscode": "^1.54.0"
   },
@@ -35,8 +35,8 @@
     "commands": [
       {
         "command": "show-link-list.show",
-        "title": "Show Links",
-        "category": "Support"
+        "title": "URLs",
+        "category": "Favorites"
       }
     ],
     "configuration": {
@@ -68,16 +68,18 @@
     "test": "node ./out/test/runTest.js"
   },
   "devDependencies": {
-    "@types/vscode": "^1.54.0",
     "@types/glob": "^8.0.0",
     "@types/mocha": "^10.0.1",
     "@types/node": "16.x",
+    "@types/vscode": "^1.54.0",
     "@typescript-eslint/eslint-plugin": "^5.45.0",
     "@typescript-eslint/parser": "^5.45.0",
+    "@vscode/test-electron": "^2.2.0",
     "eslint": "^8.28.0",
     "glob": "^8.0.3",
-    "mocha": "^10.1.0",
-    "typescript": "^4.9.3",
-    "@vscode/test-electron": "^2.2.0"
+    "mocha": "^10.1.0"
+  },
+  "dependencies": {
+    "@vscode/vsce": "^2.16.0"
   }
 }

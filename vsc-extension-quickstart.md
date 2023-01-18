@@ -13,13 +13,16 @@
 
 In Powershell
 
-* `scoop install nodejs18`
-* `npm install npm -g --ca=""`
-* `npm config set ca ""`
-* `npm config set ignore-scripts false`
-* `npm install`
-* `npm install --global vsce`
-* `tsc; vsce package`
+```powershell
+scoop install nodejs18
+npm config set strict-ssl false
+npm config set ignore-scripts false
+npm install --global @vscode/vsce
+npm install --global typescript
+npm install
+tsc
+vsce package
+```
 
 ## Get up and running straight away
 
