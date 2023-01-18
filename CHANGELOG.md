@@ -1,5 +1,9 @@
 # Change Log
 
+# 0.4.3
+
+* Change command palette to `Favorites: URLs` to better reflect the displayname.
+
 # 0.4.2
 
 * fix bug in settings.json schema
