@@ -1,23 +1,26 @@
-# show-link-list README
+# Favorite URLs README
 
 with 
 
 ```json
 {
-    "show-link-list.links": [
-        {
-            "label": "Google",
-            "url": "https://www.google.com"
-        },
-        {
-            "label": "Github",
-            "url": "https://github.com"
-        },
-        {
-            "label": "support channel",
-            "url": "https://support.your-company.com"
-        }
-    ]
+    "favorite-urls": {
+        "links": [
+            {
+                "label": "Google",
+                "url": "https://www.google.com"
+            },
+            {
+                "label": "Github",
+                "url": "https://github.com"
+            },
+            {
+                "label": "support channel",
+                "url": "https://support.your-company.com"
+            }
+        ]
+    },
+    "sort": true
 }
 ```
 

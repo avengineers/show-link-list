@@ -2,8 +2,8 @@
   "name": "show-link-list",
   "displayName": "Favorite URLs",
   "publisher": "Avengineers",
-  "description": "Shows a Dialog with a pair of labels and links as a QuickPick list configured in settings.json, e.g. links to support channels. Those can be the favorite URLs or anything project relevant to documentation or anything else.",
-  "version": "0.4.3",
+  "description": "Shows a Dialog with a pair of labels and URLs as a QuickPick list configured in settings.json, e.g. URLs to support channels. Those can be the favorite URLs or anything project relevant to documentation or anything else.",
+  "version": "0.5.0",
   "engines": {
     "vscode": "^1.54.0"
   },
@@ -24,7 +24,7 @@
   ],
   "icon": "images/icon.png",
   "activationEvents": [
-    "onCommand:show-link-list.show"
+    "onCommand:favorite-urls.show"
   ],
   "repository": {
     "type": "git",
@@ -34,26 +34,31 @@
   "contributes": {
     "commands": [
       {
-        "command": "show-link-list.show",
+        "command": "favorite-urls.show",
         "title": "URLs",
         "category": "Favorites"
       }
     ],
     "configuration": {
-      "title": "show-link-list Configuration",
+      "title": "favorite-urls Configuration",
       "properties": {
-        "show-link-list.links": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "label": {
-                "type": "string"
-              },
-              "url": {
-                "type": "string"
+        "favorite-urls": {
+          "list": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                }
               }
             }
+          },
+          "sort": {
+            "type": "boolean"
           }
         }
       }

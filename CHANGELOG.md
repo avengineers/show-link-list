@@ -1,5 +1,11 @@
 # Change Log
 
+# 0.5.0
+
+* change settings.json content according to new naming `favorite-urls`
+* add `sort` to do automatic alphabetical sorting of the presented URL QuickPick according to labels
+* minor changes in displayed messages and texts
+
 # 0.4.3
 
 * Change command palette to `Favorites: URLs` to better reflect the displayname.
