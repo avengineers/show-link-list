@@ -25,4 +25,4 @@ with
 ```
 
 you can define a set of saved URLs that shall be fast accessible within your project.
-The options pop up when running `Favorites: URLs` 
+The options pop up when running `Favorites: URLs` in the command palette or by directly using the key binding: `Shift + Alt + u`.
