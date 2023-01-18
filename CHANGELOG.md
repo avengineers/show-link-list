@@ -1,5 +1,9 @@
 # Change Log
 
+# 0.6.0
+
+* key binding added: `ctrl + shift + u` to open the quick pick list directly
+
 # 0.5.0
 
 * change settings.json content according to new naming `favorite-urls`
