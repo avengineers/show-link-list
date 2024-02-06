@@ -5,7 +5,7 @@ with
 ```json
 {
     "favorite-urls": {
-        "links": [
+        "list": [
             {
                 "label": "Google",
                 "url": "https://www.google.com"
